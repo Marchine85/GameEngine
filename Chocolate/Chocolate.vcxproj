@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Chocolate\Log.h" />
     <ClInclude Include="src\Chocolate\Application.h" />
     <ClInclude Include="src\Chocolate\Core.h" />
     <ClInclude Include="src\Chocolate.h" />
     <ClInclude Include="src\Chocolate\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Chocolate\Log.cpp" />
     <ClCompile Include="src\Chocolate\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,6 +70,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS; CH_BUILD_DLL; _DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Chocolate\src;$(SolutionDir)Chocolate\vendor\spdlog\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,6 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS; CH_BUILD_DLL; NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Chocolate\src;$(SolutionDir)Chocolate\vendor\spdlog\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

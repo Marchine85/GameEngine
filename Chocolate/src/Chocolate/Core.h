@@ -7,5 +7,5 @@
 		#define CHOCOLATE_API __declspec(dllimport)
 	#endif
 #else
-	#error Chocolate onyl supports Windows
+	#error Chocolate only supports Windows
 #endif

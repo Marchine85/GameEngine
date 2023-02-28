@@ -27,9 +27,15 @@
     <ClInclude Include="src\Chocolate\EntryPoint.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="src\Chocolate\Log.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Chocolate\Application.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chocolate\Log.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
