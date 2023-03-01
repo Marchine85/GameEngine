@@ -2,7 +2,37 @@
 FH Game Engine Developement
 
 
-# Questions
+# EXERCISE 2 - Questions
+
+## Describe a logging system with your own words:
+
+	A logging system is basically a translator between the program and the user, telling the user whats going in which step and where errors or warnings in the execution appeared. It also tells the user important information about the ongoing process.
+
+## What is the difference between git submodules and git subtrees?
+
+	1. git submodules allows for cloning specific commits of repositories into main/parent repositories. So when the parent respository is updated also the link to the commit of the sub-repository is cloned/updated. Therefore in large projects people can work independently in different repositories which are dependent on each other.
+
+	2. git subtrees allow for merging of repositories into sub-directories of the main repository. Therefore subtrees are directly part of a main repository and changes through the history of the project can be tracked within the main repository. 
+
+## What is a build system in C++? Name 3 build systems:
+
+	A build system is a tool to orchestrate the compiling and linking of code/files in a GUI or scriptable way to generate an executable file. 
+	Build Systems:
+	1. CMAKE
+	2. MAKE
+	3. PREMAKE
+	
+
+## What is a package manager in C++? Name 3 package manager:
+
+	A package manager manages dependencies inside a project and 3rd party libraries. They are working as a project repository of packages and manage their updates and dependencies.
+	Package Managers:
+	1. VCPKG
+	2. HUNTER
+	3. CONAN
+
+
+# EXERCISE 1 - Questions
 
 ## What is the difference between git and github?
 
