@@ -26,13 +26,14 @@ project "Chocolate"
 
 	includedirs
 	{
-	"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 
 		defines
 		{
@@ -74,14 +75,14 @@ project "Sandbox"
 
 	includedirs
  	{
-	"Chocolate/vendor/spdlog/include",
-	"Chocolate/src"
+		"Chocolate/vendor/spdlog/include",
+		"Chocolate/src"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 
 		defines
 		{

@@ -4,6 +4,9 @@
     <Filter Include="Chocolate">
       <UniqueIdentifier>{172CF1B8-8396-A52F-CCD4-56D5387E8384}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Chocolate\Events">
+      <UniqueIdentifier>{1B78C775-0771-E6C7-30A3-CB4C1CFBC5D3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Chocolate.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Chocolate\EntryPoint.h">
       <Filter>Chocolate</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chocolate\Events\ApplicationEvent.h">
+      <Filter>Chocolate\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chocolate\Events\Event.h">
+      <Filter>Chocolate\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chocolate\Events\KeyEvent.h">
+      <Filter>Chocolate\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chocolate\Events\MouseEvent.h">
+      <Filter>Chocolate\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Chocolate\Log.h">
       <Filter>Chocolate</Filter>
