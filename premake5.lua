@@ -10,6 +10,13 @@ workspace "Chocolate"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}" 
 
+-- include directories relative to root folder (solution directory)
+IncludeDir =  {}
+
+IncludeDir["GLFW"] = "Chocolate/vendor/GLFW/include"
+
+include "Chocolate/vendor/GLFW"
+
 project "Chocolate"
 	location "Chocolate"
 	kind "SharedLib"
@@ -17,6 +24,9 @@ project "Chocolate"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "chpch.h"
+	pchsource "Chocolate/src/chpch.cpp"
 
 	files
 	{
@@ -27,12 +37,18 @@ project "Chocolate"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links {
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
+		staticruntime "Off"
 		systemversion "latest"
 
 		defines
