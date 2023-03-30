@@ -36,9 +36,9 @@ FH Game Engine Developement
 
 #####	2. Static Library (*.lib files) is a library thats incorporated directly into the executable at compile time. Therefore, a static library is a direct part of the software and not separable anymore after compiling.
 
-## Describe a logging system with your own words:
+## Describe an event system with your own words:
 
-##### A logging system is basically a translator between the program and the user, telling the user whats going in which step and where errors or warnings in the execution appeared. It also tells the user important information about the ongoing process.
+##### An event system used for sending events to objects in the application based on input (keyboard, mouse, etc.). They components of the event system work together to send events.
 
 ## What is a Design Pattern?
 
