@@ -106,8 +106,7 @@ FH Game Engine Developement
 ## Name 2 differences between git and other version control systems:
 
 #####	1. Git has a unique branching mechanism, allowing different code branches to e.g. write different algorithms of the same project independently.
-#####	2. Compared to many other version control systems, Git has a distributed version control system, which means that repositories can be distributed
-#####	to several local machines where people can work independently on it.
+#####	2. Compared to many other version control systems, Git has a distributed version control system, which means that repositories can be distributed to several local machines where people can work independently on it.
 
 ## Name known issues related to game engines (Unreal, Unity) and version control systems:
 
